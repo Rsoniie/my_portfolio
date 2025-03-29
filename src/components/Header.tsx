@@ -1,8 +1,17 @@
+import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
+
 const Header: React.FC = () => {
   return (
     <header className='flex min-h-[80vh] flex-col items-center justify-between gap-8 px-[6%] text-center'>
       <h1 className='mt-20 text-3xl font-bold text-font md:text-5xl'>
-        Designer, Frontend Developer & Mentor
+        <TypeAnimation
+          sequence={['Designer', 1000, 'Frontend Developer', 1000, 'Mentor', 1000]}
+          wrapper='span'
+          cursor={true}
+          repeat={Infinity}
+          style={{ display: 'inline-block' }}
+        />
       </h1>
       <h2 className='text-xl font-normal text-font md:text-2xl'>
         I design and code beautifully simple things, and I love what I do.

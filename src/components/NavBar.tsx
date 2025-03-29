@@ -1,4 +1,5 @@
 import Button from './Button';
+import logo from '../assets/logo_portfolio.webp';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { useState } from 'react';
 
@@ -10,9 +11,10 @@ const NavBar: React.FC = () => {
       <div className='flex h-32 items-center'>
         <div className='flex-grow'>
           <img
-            src='https://res.cloudinary.com/dmjmaixrd/image/upload/v1668112003/logo_jgjuro.png'
+            // src='https://res.cloudinary.com/dmjmaixrd/image/upload/v1668112003/logo_jgjuro.png'
+            src={logo}
             alt='logo'
-            className='w-14'
+            className='w-14 rounded-lg'
           />
         </div>
         {navWindow ? (
